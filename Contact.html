@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+  </head>
+  <body>
+    <h1>Contact</h1>
+    <p><strong>Location</strong>: United States</p>
+    <p><strong>Phone</strong>: 111.101.0000</p>
+    <p>
+      <strong> Email </strong> : email@gmail.com
+      </p>
+      <hr>
+
+
+      <form action="mailto:briatkins20@gmail.com" method="post" enctype="text/plain">
+        <!-- Enctype/encode type is set to plain text to ensure no other values are added
+      when the form is sent -->
+        <label>Your Name:</label>
+        <input type="text" name="yourName" value=""><br> <!--Specifying the name attribute will identify
+        the data inside of each input when the form is sent-->
+        <label>Your Email:</label>
+        <input type="email" name="yourEmail" value=""><br>
+        <label>Your Message</label><br>
+        <textarea name="YourMessage" rows="10" cols="30"></textarea><br>
+        <input type="submit" name="">
+<!-- The form tag is used to define what should go into the form. Inorder
+for the form to do anything the label and input tags are requires
+The text between the label tags is the text that will be displayed inside of the form. The input tags
+are self closing, define the input type using the type attributes such as text or submit. The other
+input attributes are available on developer.mozilla.org -->
+      </form>
+
+  </body>
+</html>

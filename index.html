@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<!-- Everything bewtween the html tags will be written in the html code -->
+
+<head>
+  <!-- The head tags hold information about the webpage and it tells the browers how it should handle the page -->
+  <meta charset="utf-8">
+  <!-- Meta elements tag give extra data to/about html docutments, (the characterset)
+  all of the text in this webpage are using the coding system utf 8 (it is the standard coding system; unicode-table.com), the meta elements
+  can include page description, author, keywords etc. Meta tags give search engines the descriptions to display it in their search index
+    Visit w3schools or developer.mozilla.org -->
+  <title>Briana Atkins</title>
+</head>
+
+<body>
+  <table cellspacing="20">
+    <tr>
+      <td><img src="flowers.png" alt="Briana Profile Picture"></td>
+      <!-- There are two ways to include images into html site. #1 to get the email address by right clicking an image from the internet
+    and placing it in the source (src). The downside to this way is if the website is down from where you took the image address
+    you're image will not be available. #2 (The best option) Save the image in the same location your html webpages are saved for example in
+    the Web Development Folder, in the HTML Personal Site Folder. Drag the image into the folder, you can now refer to the file name in the
+    html folder. If there is an Images folder, you would need to write a path to get to the folder i.e. images/briana.png. crop-circle.imageonline.co
+    will be able to crop circle images.
+    The alternative (alt) - is the alternative text is what will appear if the image is not available to the website to be rendered
+    -->
+      <td>
+        <h1> Briana Atkins </h1>
+        <p>
+          <em>Assistant Designer at <strong><a href="https://www.pery.com/">Perry Ellis International</a></strong></em>
+          <!--use em instead of i for italicized, use strong tag instaed of b tag for bold words -->
+          <!--Visit developer.mozilla.org HTML element reference for more information -->
+
+        </p>
+        <p>The inspiration for my work comes from my interactions with people of other cultures, technology, nature, and photography to give a few examples.
+          The variety in my inspirations and concepts are shown throughout my work. In each project I try to develop my skills and push my abilities further.
+          Fashion should have variety, to change with consumer's mood, and the ability to have an impact on someone's life and wardrobe.</p>
+      </td>
+    </tr>
+  </table>
+  <!--The image and introduction of the website is placed inside of a table with a single <tr> and two <td> cells
+which will allow the image and introduction to be side by side -->
+  <hr>
+  <h3>Education</h3>
+  <ul>
+    <li>
+      <p><strong><a href="https://www.scad.edu/">Savannah College of Art and Design</a></strong></p>
+      <!-- for <a> tag it includes an html attribute, a html reference (href) is the url to link the text to, the anchor tag is not a self closing tab
+  , between the open and close anchor points, after the " " you put the text you want the url to be attached to</a>-->
+    </li>
+
+    <p><strong>B.F.A</strong> - Fashion Design</p>
+
+
+    <!-- ul means unordered list - it will contain bullet points, visit developer.mozilla.org for more information -->
+  </ul>
+
+  <hr>
+  <h3>Work Experience</h3>
+  <table cellspacing="10">
+    <thead>
+      <tr>
+        <th>Dates</th>
+        <th>Work</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2020</td>
+        <td>Assistant Designer, Perry Ellis International</td>
+      </tr>
+      <tr>
+        <td>2019-2020</td>
+        <td>Design Intern, Maison de Papillon</td>
+      </tr>
+      <tr>
+        <td>2014-2019</td>
+        <td>Department Supervisor, H&M</td>
+      </tr>
+      <tr>
+        <td>2015-2016</td>
+        <td>Design Intern, Debbit Shuchat</td>
+      </tr>
+    </tbody>
+  </table>
+  <!--Everything between the table tag is the content of the table, by default the table will
+not be stylized <tr> - is the table row, a single row, <td> is the table data/cells - it is
+the information that goes into the row. There are no table columns in HTML tables, only horizontal rows.
+Tables can also contain a head,body, and footer. Inside the table head <thead> the <tr> can have a table header cell <th>
+Information is placed into the table this way in case additional styling is wanted later, like leaving the <th> fixed while
+you can scroll the body section-->
+  <hr>
+
+
+  <h3>Skills</h3>
+
+  <table>
+    <!--There are nested tables inside of the table data elements of the first table -->
+    <tr>
+      <td>
+        <table cellspacing="10">
+          <tr>
+            <td>HTML (5)</td>
+            <td>⭐️</td>
+          <tr>
+            <td>Illustrator</td>
+            <td>⭐️⭐️⭐️⭐️</td>
+          </tr>
+        </table>
+      </td>
+      <td>
+        <table cellspacing="10">
+          <tr>
+            <td>Photoshop</td>
+            <td>⭐️⭐️⭐️⭐️</td>
+          </tr>
+          <tr>
+            <td>Excel</td>
+            <td>⭐️⭐️⭐️</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+
+  <hr>
+  <a href="hobbies.html">My Hobbies</a>
+  <!-- add another anchor point <a></a> with the information in "" being the file name the new page will be on with the Title of the page
+as the linked information-->
+  <p>
+    <a href="contact.html">Contact</a>
+  </p>
+</body>
+
+</html>
